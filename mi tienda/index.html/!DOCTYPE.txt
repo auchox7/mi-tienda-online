@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Increíble</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icono de Font Awesome para el carrito -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mi Tienda Increíble</h1>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="products-grid" id="products-grid">
+            <!-- Los productos se cargarán aquí con JavaScript -->
+        </section>
+
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <h2>Tu Carrito</h2>
+            <div id="cart-items">
+                <!-- Los items del carrito se cargarán aquí -->
+            </div>
+            <div class="cart-summary">
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-button">Pagar</button>
+            </div>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </aside>
+
+        <!-- Overlay para el carrito -->
+        <div class="overlay" id="overlay"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mi Tienda Increíble. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Incluir la librería de Stripe.js para procesar pagos -->
+    <!-- ¡IMPORTANTE! Reemplaza con la de Mercado Pago/PayPal si las usas -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="script.js"></script>
+</body>
+</html>
